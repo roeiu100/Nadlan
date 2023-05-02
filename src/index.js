@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import HomePage from './pages/Home/HomePage'
 import InfoPage from './pages/info/InfoPage';
 import ErrorPage from './pages/general/ErrorPage';

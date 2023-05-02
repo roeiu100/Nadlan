@@ -1,11 +1,9 @@
 import React from 'react'
-import { NavLink, useParams } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import cover from '../../images/bg-info.jpg'
 import Map from './components/Map';
-import { ArrowBack, Camera, Phone, Preview, VideoCameraBack } from '@mui/icons-material';
+import { ArrowBack, Phone, VideoCameraBack } from '@mui/icons-material';
 import Footer from '../general/Footer';
-import { CarouselItem } from './components/CarouselItem';
 import { Carousel } from './components/Carousel';
 const InfoPage = () => {
 const location=useLocation() 
@@ -40,13 +38,13 @@ const priceLines = price.split('\n');
                  </p>
                 <div className=" mt-10 text-right">   
                     <a href="https://wa.me/+905391182712?text=היי%20לאון,%20אני%20רוצה%20להתייעץ%20איתך%20בנוגע%20לנדל''ן%20בצפון%20קפריסין"   
-                    target='_blank'         
+                    target='_blank' rel="noreferrer"         
                   className="bg-green-600 opacity-75 hover:bg-green-800 text-white 
                     rounded-full px-9 py-3 font-semibold "><Phone/> ליצירת קשר</a>
                 </div>
                 
                 <div className=" mt-10 text-right">   
-                    <a href={video} target='_blank'          
+                    <a href={video} target='_blank'  rel="noreferrer"         
                   className="bg-red-600 opacity-75 hover:bg-red-800 text-white 
                     rounded-full px-10 py-3 font-semibold "><VideoCameraBack/>  סרטון</a>
                 </div>
