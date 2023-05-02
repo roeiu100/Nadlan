@@ -23,7 +23,7 @@ const Footer = () => {
                   className="bg-white shadow-xl	 font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
                   type="button"
                 >
-                  <a className="text-green-400 " href="https://wa.me/+905391182712?text=היי%20לאון,%20אני%20רוצה%20להתייעץ%20איתך%20בנוגע%20לנדל''ן%20בצפון%20קפריסין" target="_blank">
+                  <a className="text-green-400 " rel="noreferrer" href="https://wa.me/+905391182712?text=היי%20לאון,%20אני%20רוצה%20להתייעץ%20איתך%20בנוגע%20לנדל''ן%20בצפון%20קפריסין" target="_blank">
                     <WhatsApp/>
                   </a>
                 </button>
@@ -32,7 +32,7 @@ const Footer = () => {
                   type="button"
                 >
                   <a
-                    className="text-pink-300"
+                    className="text-pink-300" rel="noreferrer"
                     href="https://instagram.com/nadlan_cafrisin?igshid=YmMyMTA2M2Y="
                     target="_blank"
                   >
@@ -44,7 +44,7 @@ const Footer = () => {
                   type="button"
                 >
                   <a
-                    className="text-blue-800"
+                    className="text-blue-800" rel="noreferrer"
                     href="https://m.facebook.com/profile.php?id=100090614795463"
                     target="_blank"
                   >
