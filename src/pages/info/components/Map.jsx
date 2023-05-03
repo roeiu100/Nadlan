@@ -2,10 +2,9 @@ import React, { useMemo } from 'react';
 import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api';
 
 const Map = ({lat,lng}) => {
-  const apiKey = ''
-  const { isLoaded } = useLoadScript({ googleMapsApiKey: apiKey });
+  const { isLoaded } = useLoadScript({ googleMapsApiKey: '' });
 
-  const center =useMemo(()=>({ lat: lat, lng: lng }),[lat,lng]) ;
+  const center =useMemo(()=>({ lat: lat, lng: lng }),[]) ;
 
   if (!isLoaded) return <div>Loading...</div>;
 

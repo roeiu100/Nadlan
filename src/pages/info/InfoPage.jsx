@@ -31,11 +31,11 @@ const priceLines = price.split('\n');
     <div className='mr-72'>  <a href='/' ><ArrowBack className='hover:text-blue-600'/></a> </div>
                      <h1 className="font-bold uppercase text-2xl mb-5 second-head text-center">{title}</h1>
 
-          <p className="text-xl font-semibold text-right">
+          <div className="text-xl font-semibold text-right">
           {priceLines.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
-                 </p>
+                 </div>
                 <div className=" mt-10 text-right">   
                     <a href="https://wa.me/+905391182712?text=היי%20לאון,%20אני%20רוצה%20להתייעץ%20איתך%20בנוגע%20לנדל''ן%20בצפון%20קפריסין"   
                     target='_blank' rel="noreferrer"         
