@@ -1,7 +1,9 @@
 import React from 'react'
-const Hero = ({logo}) => {
+const Hero = ({logo,HeroImg}) => {
   return  (
-    <div className={`relative bg-[url('./images/beach.jpg')] bg-cover bg-center flex justify-center items-center h-96 md:h-screen`}>
+    <div className={` relative  bg-cover bg-center flex justify-center items-center h-96 md:h-screen`} 
+    style={{backgroundImage: `url(${HeroImg})`}}
+    >
 
     
     <div className="mt-16 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 flex justify-center">
@@ -18,7 +20,7 @@ const Hero = ({logo}) => {
         <a
           href="#start"
           aria-label="Scroll down"
-          className="flex items-center mt-16 justify-center animate-bounce my-10	 bg-blue-500 hover:bg-blue-700 w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+          className=" flex items-center mt-16 justify-center animate-bounce my-10	 bg-blue-500 hover:bg-blue-700 w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -5,18 +5,18 @@ import { Facebook,Instagram,WhatsApp } from "@mui/icons-material";
 import { Divider } from "@mui/material";
 const Footer = () => {
   return (
-    <div className="mt-6">
+    <div className="mt-2">
       <Divider />
-      <footer className="block py-4 pt-12  bg-slate-50 relative">
+      <footer className="block py-4 pt-12  bg-slate-50 relative ">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-left lg:text-left">
-            <div className="w-full lg:w-6/12 px-4">  <h2 className="mr-[100px]" dir="ltr">+90 539 118 27 12</h2> 
-              <h4 className="text-3xl fonat-semibold text-blueGray-700 ml-[210px]">
+            <div className="w-full lg:w-6/12 px-4 "> 
+              <h4 className="text-3xl fonat-semibold text-blueGray-700 ml-[245px]">
                 בואו נשמור על קשר
               </h4>
            
-              <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-            תמצאו אותנו באחת מהפלטפורמות הבאות ותקבלו תשובה באותו יום.
+              <h5 className="text-lg mt-0 mb-2 text-blueGray-600 ">
+            תמצאו אותנו באחת מהפלטפורמות הבאות ותקבלו ייעוץ בחינם באותו היום.
               </h5>
               <div className="mt-6 lg:mb-0 mb-6 ">
                 <button

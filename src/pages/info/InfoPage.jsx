@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import cover from '../../images/bg-info.jpg'
 import Map from './components/Map';
@@ -7,15 +7,19 @@ import Footer from '../general/Footer';
 import { Carousel } from './components/Carousel';
 const InfoPage = () => {
 const location=useLocation() 
-const {pic,info,title,price,lat,lng,video,pics}=location.state
+const {pic,info,title,price,lat,lng,video,pics,size}=location.state
 console.log(location); 
 const priceLines = price.split('\n');
+const sizeLines = size.split('\n');
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 
-  return (
-    <div>
+return (
+  <div onLoad={() => window.scrollTo(0, 0)}>
         <div className="absolute top-0 left-0 w-full  p">
               <img
-                className=" w-full h-[170vh]"
+                className=" w-full h-[190vh]"
                 src={cover}
                 alt=""
               />
@@ -43,15 +47,24 @@ const priceLines = price.split('\n');
                     rounded-full px-9 py-3 font-semibold "><Phone/> ליצירת קשר</a>
                 </div>
                 
-                <div className=" mt-10 text-right">   
+            {video&&    <div className=" mt-10 text-right">   
                     <a href={video} target='_blank'  rel="noreferrer"         
                   className="bg-red-600 opacity-75 hover:bg-red-800 text-white 
                     rounded-full px-10 py-3 font-semibold "><VideoCameraBack/>  סרטון</a>
-                </div>
+                </div>}
         </div>
     </div>  
     <div className="mb-10 text-right px-5 mt-3">
+    <p className="text-xl font-semibold text-right">
+      גדלים<br></br>
+      {sizeLines.map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}               </p>
+    </div>
+    <div className="mb-10 text-right px-5 mt-3">
                 <p className="text-xl font-semibold text-right">
+                פירוט<br></br>
+
                     {info}
                  </p>
             </div>
