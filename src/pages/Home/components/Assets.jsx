@@ -6,7 +6,7 @@ const Assets = ({pic,info,title,price,lat,lng,camera,video,pics,size}) => {
         <div className="md:flex-shrink-0">
             <img src={pic} alt="assest" className="w-full h-64 rounded-lg rounded-b-none"/>
         </div>
-        <div className="px-4 py-2 mt-2 h-[235px]">
+        <div className="px-4 py-2 mt-2 lg:h-[235px] h-[330px] ">
             <h2 className="font-bold text-2xl text-gray-800 tracking-normal">{title}</h2>
                 <p className="text-xl text-gray-700 px-2 mr-1 mb-10">
                   {info}

@@ -5,6 +5,11 @@ import Assets from './components/Assets'
 import blue from '../../images/blue.jpeg'
 import cliff from '../../images/cliff.jpeg'
 import jumeirah from '../../images/Jumeirah.jpeg'
+import jumeirah2 from '../../images/Jumeirah2.jpeg'
+import jumeirah3 from '../../images/Jumeirah3.jpeg'
+import jumeirah4 from '../../images/Jumeirah4.jpeg'
+import jumeirah5 from '../../images/Jumeirah5.jpeg'
+import jumeirah6 from '../../images/Jumeirah6.jpeg'
 import resort from '../../images/resort.jpeg'
 import resortBad from "../../images/resortBad.jpeg"
 import resortKitcen from "../../images/resortKitchen.jpeg"
@@ -45,7 +50,7 @@ import cliff5 from '../../images/cliff5.jpeg'
 import cliff6 from '../../images/cliff6.jpeg'
 import cliff7 from '../../images/cliff7.jpeg'
 import cliff8 from '../../images/cliff8.jpeg'
-import logo from "../../images/archaeological.png"
+import logo from "../../images/logo.png"
 import HeroImg from "../../images/beach.jpg"
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
@@ -60,6 +65,7 @@ const Home = () => {
   const cliffPics=[cliffKitchen,cliffYard,cliffLivingRoom,cliff2,cliff3,cliff4,cliff5,cliff6,cliff7,cliff8]
   const resortPics=[resortBad,resortKitcen,resortLivingRoom,resort2,resort3,resort4,resort5,resort6,resort7,resort8,resort9]
   const breezePics=[breezeBad,breezeBat,breezeLivingRoom,breeze2,breeze3,breeze4,breeze5]
+  const jumeirahPics=[jumeirah2,jumeirah3,jumeirah4,jumeirah5,jumeirah6]
   return (
     <div className='text-center '>
         <Hero logo={logo} HeroImg={HeroImg}/>
@@ -73,7 +79,7 @@ const Home = () => {
         <Advantages content={"סיור חינם של כ-3 לילות"} icon={<MapIcon/>}/>
         <Advantages content={"מחיר ללא תיווך"} icon={<TollIcon/>}/>
         </div>        
-        <div className={`grid gap-4 grid-cols-2 max-md:grid-cols-1 mt-4 bg-[url('./images/cover2.jpg')]`}>
+        <div className={`grid gap-4 grid-cols-2 max-md:grid-cols-1 mt-4 md:bg-[url('./images/cover2.jpg')]`}>
 
         <Assets 
         pic={blue} 
@@ -100,7 +106,7 @@ const Home = () => {
        />
         <Assets 
         pic={jumeirah} 
-        pics={breezePics}
+        pics={jumeirahPics}
         info={"דירות יוקרתיות במתחם דור חדש ומיני דובאי בצפון קפריסין, רק 10 דקות הליכה מהים. המתחם מציע מגוון מתקני פנאי כגון בריכת שחייה מרעננת, גן שעשועים, וחדר משחקים. כל יחידת הדיור מאובזרת במטבחון עם מיקרוגל ומקרר, טלוויזיה עם מסך שטוח וערוצי כבלים, פינת ישיבה עם ספה, ארון בגדים, מתקני גיהוץ וחדר רחצה פרטי עם מוצרי טיפוח חינם.        "}
         price={"דזומאירא כניסה 2025\n שלוש אופציות לתשלומים \n 1)תשלום ראשון 40%, אחרי 20% עד קבלת המפתח, 24% תשלום משכר דירה מופתח 8% לשלושה שנים, אחרי סיום שכר דירה מופתח 12% תוך שנה אחד \n2)תשלום ראשון 30%, תשלומים ל 84 חודשים \n3)75% תשלום ראשון, 25% עד קבלת המפתח, קאשבק 6% כל שנה עד סיום הבנייה. \n סטודיו החל 500000 ש״ח\nחדר שינה 1 החל מ 608000 ש״ח\n 2 חדרי שינה החל מ 954000 ש״ח"}
         title={"Palm Jumeirah"}
