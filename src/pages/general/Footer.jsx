@@ -5,7 +5,7 @@ import { Facebook,Instagram,WhatsApp } from "@mui/icons-material";
 import { Divider } from "@mui/material";
 const Footer = () => {
   return (
-    <div className="mt-2">
+    <div className="">
       <Divider />
       <footer className="block py-4 pt-12  bg-slate-50 relative ">
         <div className="container mx-auto px-4">

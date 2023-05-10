@@ -19,7 +19,7 @@ return (
   <div onLoad={() => window.scrollTo(0, 0)}>
         <div className="absolute top-0 left-0 w-full  p">
               <img
-                className=" w-full h-[190vh]"
+                className=" lg:w-full lg:h-[210vh] w-0 h-0"
                 src={cover}
                 alt=""
               />
